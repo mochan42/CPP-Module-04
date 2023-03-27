@@ -6,7 +6,7 @@
 /*   By: mochan <mochan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/26 17:19:48 by mochan            #+#    #+#             */
-/*   Updated: 2023/03/27 15:02:57 by mochan           ###   ########.fr       */
+/*   Updated: 2023/03/27 20:14:10 by mochan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,8 @@ class	Animal
 
 		// MEMBER FUNCTIONS
 		virtual void	makeSound(void) const;
+		virtual void	setIdea(int index, std::string idea) const;
+		virtual void	printIdea(int index) const;
 
 	protected:
 		std::string		_type;

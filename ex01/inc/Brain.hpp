@@ -6,7 +6,7 @@
 /*   By: mochan <mochan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/27 18:14:42 by mochan            #+#    #+#             */
-/*   Updated: 2023/03/27 19:07:29 by mochan           ###   ########.fr       */
+/*   Updated: 2023/03/27 20:00:19 by mochan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ class	Brain
 		void		setIdea(int index, std::string& setIdea);
 		
 		// MEMBER FUNCTIONS
-		
+		void		printIdea(int index) const;
 
 	private:
 		std::string	_ideas[100];

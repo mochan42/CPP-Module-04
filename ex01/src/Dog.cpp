@@ -6,7 +6,7 @@
 /*   By: mochan <mochan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/26 17:19:33 by mochan            #+#    #+#             */
-/*   Updated: 2023/03/27 19:02:24 by mochan           ###   ########.fr       */
+/*   Updated: 2023/03/27 20:11:36 by mochan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,4 +53,15 @@ Dog::~Dog()
 void	Dog::makeSound(void) const
 {
 	std::cout << BKLIGRN << this->_type << " barks! (from Dog)" << D << "\n";
+}
+
+void	Dog::setIdea(int index, std::string idea) const
+{
+	this->_ptr->setIdea(index, idea);
+}
+
+void	Dog::printIdea(int index) const
+{
+	std::cout << "Dog thinks: ";
+	_ptr->printIdea(index);
 }

@@ -6,7 +6,7 @@
 /*   By: mochan <mochan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/26 17:19:56 by mochan            #+#    #+#             */
-/*   Updated: 2023/03/27 16:54:41 by mochan           ###   ########.fr       */
+/*   Updated: 2023/03/27 19:41:59 by mochan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #define CAT_H
 
 #include "Animal.h"
+#include "Brain.h"
 #include "Cat.hpp"
 
 #endif
