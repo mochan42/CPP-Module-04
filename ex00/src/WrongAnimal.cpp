@@ -6,7 +6,7 @@
 /*   By: mochan <mochan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/27 15:49:56 by mochan            #+#    #+#             */
-/*   Updated: 2023/03/27 17:39:28 by mochan           ###   ########.fr       */
+/*   Updated: 2023/03/27 18:00:32 by mochan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 WrongAnimal::WrongAnimal()
 {
 	std::cout << BLU << "Default constructor called from WrongAnimal" << D << "\n";
+	this->_type = "Random WrongAnimal";
 }
 
 WrongAnimal::WrongAnimal(const WrongAnimal& src)
@@ -48,5 +49,5 @@ std::string		WrongAnimal::getType(void) const
 //======== MEMBER FUNCTIONS =====================================================================
 void	WrongAnimal::makeSound(void) const
 {
-	std::cout << YELL << this->_type << " makes a WrongAnimal sound! " << D << "\n";
+	std::cout << YELL << this->_type << " makes a WrongAnimal sound! (from WrongAnimal) " << D << "\n";
 }

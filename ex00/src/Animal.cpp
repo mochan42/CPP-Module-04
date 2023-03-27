@@ -6,7 +6,7 @@
 /*   By: mochan <mochan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/26 17:19:33 by mochan            #+#    #+#             */
-/*   Updated: 2023/03/27 17:36:32 by mochan           ###   ########.fr       */
+/*   Updated: 2023/03/27 17:59:43 by mochan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 Animal::Animal()
 {
 	std::cout << BLU << "Default constructor called from Animal" << D << "\n";
+	this->_type = "Random Animal";
 }
 
 Animal::Animal(const Animal& src)
@@ -48,5 +49,5 @@ std::string		Animal::getType(void) const
 //======== MEMBER FUNCTIONS =====================================================================
 void	Animal::makeSound(void) const
 {
-	std::cout << DKGRN << this->_type << " makes an Animal sound! " << D << "\n";
+	std::cout << DKGRN << this->_type << " makes an Animal sound! (from Animal)" << D << "\n";
 }

@@ -6,7 +6,7 @@
 /*   By: mochan <mochan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/27 15:49:28 by mochan            #+#    #+#             */
-/*   Updated: 2023/03/27 15:49:33 by mochan           ###   ########.fr       */
+/*   Updated: 2023/03/27 17:45:12 by mochan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ class	WrongAnimal
 		std::string		getType(void) const;
 
 		// MEMBER FUNCTIONS
-		virtual void	makeSound(void) const;
+		void	makeSound(void) const;
 
 	protected:
 		std::string		_type;

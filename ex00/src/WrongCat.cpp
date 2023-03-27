@@ -6,7 +6,7 @@
 /*   By: mochan <mochan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/26 17:19:33 by mochan            #+#    #+#             */
-/*   Updated: 2023/03/27 17:11:53 by mochan           ###   ########.fr       */
+/*   Updated: 2023/03/27 17:48:22 by mochan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,5 +46,5 @@ WrongCat::~WrongCat()
 //======== MEMBER FUNCTIONS =====================================================================
 void	WrongCat::makeSound(void) const
 {
-	std::cout << BDRED << this->_type << " meeoowww wrongly! " << D << "\n";
+	std::cout << BDRED << this->_type << " meeoowww wrongly! (from WrongCat) " << D << "\n";
 }
