@@ -6,7 +6,7 @@
 /*   By: mochan <mochan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/27 15:49:56 by mochan            #+#    #+#             */
-/*   Updated: 2023/03/27 15:54:42 by mochan           ###   ########.fr       */
+/*   Updated: 2023/03/27 17:39:28 by mochan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,5 +48,5 @@ std::string		WrongAnimal::getType(void) const
 //======== MEMBER FUNCTIONS =====================================================================
 void	WrongAnimal::makeSound(void) const
 {
-	std::cout << RED << this->_type << " makes a WrongAnimal sound! " << D << "\n";
+	std::cout << YELL << this->_type << " makes a WrongAnimal sound! " << D << "\n";
 }
