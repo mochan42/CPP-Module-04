@@ -1,29 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Dog.hpp                                            :+:      :+:    :+:   */
+/*   WrongCat.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mochan <mochan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/26 17:19:48 by mochan            #+#    #+#             */
-/*   Updated: 2023/03/27 15:28:24 by mochan           ###   ########.fr       */
+/*   Created: 2023/03/27 15:41:29 by mochan            #+#    #+#             */
+/*   Updated: 2023/03/27 15:44:03 by mochan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef Dog_HPP
-#define Dog_HPP
+#ifndef WRONGCAT_HPP
+#define WRONGCAT_HPP
 #include <iostream>
 
-class	Dog : public Animal
+class	WrongCat : public WrongAnimal
 {
 	public:
 		// CONSTRUCTORS - DESTRUCTOR
-		Dog(); // Default constructor
-		Dog(const Dog& other); // Default copy constructor
-		~Dog(); // Destructor
+		WrongCat(); // Default constructor
+		WrongCat(const WrongCat& other); // Default copy constructor
+		~WrongCat(); // Destructor
 		
 		// OVERLOAD OPERATOR
-		Dog&	operator=(const Dog& src); // Copy assignment operator called
+		WrongCat&	operator=(const WrongCat& src); // Copy assignment operator called
 
 		// MEMBER FUNCTIONS
 		virtual void	makeSound(void) const;

@@ -6,7 +6,7 @@
 /*   By: mochan <mochan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/26 17:19:48 by mochan            #+#    #+#             */
-/*   Updated: 2023/03/27 11:48:06 by mochan           ###   ########.fr       */
+/*   Updated: 2023/03/27 15:02:57 by mochan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ class	Animal
 		// CONSTRUCTORS - DESTRUCTOR
 		Animal(); // Default constructor
 		Animal(const Animal& other); // Default copy constructor
-		~Animal(); // Destructor
+		virtual ~Animal(); // Destructor
 		
 		// OVERLOAD OPERATOR
 		Animal&	operator=(const Animal& src); // Copy assignment operator called

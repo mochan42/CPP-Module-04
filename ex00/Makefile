@@ -21,7 +21,8 @@ END_COLOR			:= \033[0;39m
 # **************************************************************************** #
 # SOURCES
 
-SRC_FILES			:= Animal.cpp Dog.cpp main.cpp\
+SRC_FILES			:= Animal.cpp Dog.cpp Cat.cpp \
+						WrongAnimal.cpp WrongCat.cpp main.cpp
 
 OBJ_FILES			:= ${SRC_FILES:.cpp=.o}
 

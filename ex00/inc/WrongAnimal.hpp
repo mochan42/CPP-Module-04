@@ -1,32 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Dog.hpp                                            :+:      :+:    :+:   */
+/*   WrongAnimal.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mochan <mochan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/26 17:19:48 by mochan            #+#    #+#             */
-/*   Updated: 2023/03/27 15:28:24 by mochan           ###   ########.fr       */
+/*   Created: 2023/03/27 15:49:28 by mochan            #+#    #+#             */
+/*   Updated: 2023/03/27 15:49:33 by mochan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef Dog_HPP
-#define Dog_HPP
+#ifndef WRONGANIMAL_HPP
+#define WRONGANIMAL_HPP
 #include <iostream>
 
-class	Dog : public Animal
+class	WrongAnimal
 {
 	public:
 		// CONSTRUCTORS - DESTRUCTOR
-		Dog(); // Default constructor
-		Dog(const Dog& other); // Default copy constructor
-		~Dog(); // Destructor
+		WrongAnimal(); // Default constructor
+		WrongAnimal(const WrongAnimal& other); // Default copy constructor
+		virtual ~WrongAnimal(); // Destructor
 		
 		// OVERLOAD OPERATOR
-		Dog&	operator=(const Dog& src); // Copy assignment operator called
+		WrongAnimal&	operator=(const WrongAnimal& src); // Copy assignment operator called
+		
+		// GETTERS - SETTERS
+		std::string		getType(void) const;
 
 		// MEMBER FUNCTIONS
 		virtual void	makeSound(void) const;
+
+	protected:
+		std::string		_type;
 };
 
 #endif
