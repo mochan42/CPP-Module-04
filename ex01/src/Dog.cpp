@@ -6,7 +6,7 @@
 /*   By: mochan <mochan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/26 17:19:33 by mochan            #+#    #+#             */
-/*   Updated: 2023/03/27 20:11:36 by mochan           ###   ########.fr       */
+/*   Updated: 2023/03/27 20:38:21 by mochan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,6 @@ void	Dog::setIdea(int index, std::string idea) const
 
 void	Dog::printIdea(int index) const
 {
-	std::cout << "Dog thinks: ";
+	std::cout << YELL << "Dog thinks: ";
 	_ptr->printIdea(index);
 }

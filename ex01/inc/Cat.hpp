@@ -6,7 +6,7 @@
 /*   By: mochan <mochan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/26 17:19:48 by mochan            #+#    #+#             */
-/*   Updated: 2023/03/27 19:42:19 by mochan           ###   ########.fr       */
+/*   Updated: 2023/03/27 20:35:16 by mochan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@ class	Cat : public Animal
 
 		// MEMBER FUNCTIONS
 		virtual void	makeSound(void) const;
+		void			setIdea(int index, std::string idea) const;
+		void			printIdea(int index) const;
 		
 	private:
 		Brain*	_ptr;

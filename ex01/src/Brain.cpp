@@ -6,7 +6,7 @@
 /*   By: mochan <mochan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/27 18:12:07 by mochan            #+#    #+#             */
-/*   Updated: 2023/03/27 20:01:11 by mochan           ###   ########.fr       */
+/*   Updated: 2023/03/27 20:38:36 by mochan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,5 +62,5 @@ void	Brain::setIdea(int index, std::string& setIdea)
 //======== MEMBER FUNCTIONS =====================================================================
 void	Brain::printIdea(int index) const
 {
-	std::cout << _ideas[index] << "\n";
+	std::cout << _ideas[index] << D << "\n";
 }

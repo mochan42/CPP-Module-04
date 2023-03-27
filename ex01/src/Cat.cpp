@@ -6,7 +6,7 @@
 /*   By: mochan <mochan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/26 17:19:33 by mochan            #+#    #+#             */
-/*   Updated: 2023/03/27 19:42:56 by mochan           ###   ########.fr       */
+/*   Updated: 2023/03/27 20:46:28 by mochan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,7 @@ Cat&	Cat::operator=(const Cat& src)
 Cat::~Cat()
 {
 	std::cout << CY << "Destructor called from Cat" << D << "\n";
+	delete _ptr;
 }
 
 
@@ -52,4 +53,15 @@ Cat::~Cat()
 void	Cat::makeSound(void) const
 {
 	std::cout << BDGRN << this->_type << " meeoowww! (from Cat)" << D << "\n";
+}
+
+void	Cat::setIdea(int index, std::string idea) const
+{
+	this->_ptr->setIdea(index, idea);
+}
+
+void	Cat::printIdea(int index) const
+{
+	std::cout << GREEN << "Cat thinks: ";
+	_ptr->printIdea(index);
 }
