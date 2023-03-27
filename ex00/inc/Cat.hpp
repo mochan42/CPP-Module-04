@@ -6,12 +6,12 @@
 /*   By: mochan <mochan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/26 17:19:48 by mochan            #+#    #+#             */
-/*   Updated: 2023/03/27 15:28:30 by mochan           ###   ########.fr       */
+/*   Updated: 2023/03/27 16:54:47 by mochan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef Cat_HPP
-#define Cat_HPP
+#ifndef CAT_HPP
+#define CAT_HPP
 #include <iostream>
 
 class	Cat : public Animal

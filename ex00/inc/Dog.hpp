@@ -6,12 +6,12 @@
 /*   By: mochan <mochan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/26 17:19:48 by mochan            #+#    #+#             */
-/*   Updated: 2023/03/27 15:28:24 by mochan           ###   ########.fr       */
+/*   Updated: 2023/03/27 16:55:03 by mochan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef Dog_HPP
-#define Dog_HPP
+#ifndef DOG_HPP
+#define DOG_HPP
 #include <iostream>
 
 class	Dog : public Animal

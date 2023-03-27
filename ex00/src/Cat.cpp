@@ -6,7 +6,7 @@
 /*   By: mochan <mochan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/26 17:19:33 by mochan            #+#    #+#             */
-/*   Updated: 2023/03/27 14:25:31 by mochan           ###   ########.fr       */
+/*   Updated: 2023/03/27 17:09:09 by mochan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,5 +46,5 @@ Cat::~Cat()
 //======== MEMBER FUNCTIONS =====================================================================
 void	Cat::makeSound(void) const
 {
-	std::cout << YELL << this->_type << " meeoowww! " << D << "\n";
+	std::cout << BDGRN << this->_type << " meeoowww! " << D << "\n";
 }
